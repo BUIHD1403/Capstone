@@ -1,19 +1,58 @@
-.navbar-expand-lg {
-    /*background-color: #DEFCFF;*/
-    font-family: 'Lato-light', sans-serif;
-    
+@charset "UTF-8";
+
+.navbar a {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    font-size: 30px;
 }
 
-div.container {
-    /*border: medium none !important;*/
+body {
+    background-color: #E6EAEC;
+}
+
+div {
+    padding: vertical;
+    margin-top: 20px, 0;
+}
+
+div .container {
     float: center;
     border: 1px solid #DCDCDC;
-    margin: auto;
+    margin: 100px;
     min-width: 98%;
     padding: 20px;
     padding-top: 20px;
     width: 98%;
-    background-color: #EAE6E3;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     box-shadow: 0 0 2px #DCDCDC;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+div .container h1, h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #458895;
+}
+body h1, h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #458895;
+}
+.card{
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+div .jumbotron {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    position: relative
+}
+
+a .carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 12%;
+    top: 15%;
+    width: 35px;
 }

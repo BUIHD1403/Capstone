@@ -1,0 +1,38 @@
+<script>
+        var ctx = document.getElementById("weekly_rr_summary").getContext('2d')
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: JSON.parse(document.getElementById('rr_chart_labels').textContent),
+                datasets: [{
+                    label: "Respiratory Rate",
+                    data: {{ rr_data }},
+                    borderColor: 'rgba(255, 171, 92, 1)',
+                    backgroundColor: 'rgba(255, 171, 92, 0.1)',
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                },
+                title: {
+                    display: true,
+                    text: 'Weekly Respiratory Rate Summary',
+                    fontStyle: 'normal',
+                    fontSize: 22,
+                    fontFamily: 'Lato',
+                },
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Breaths Per Minute',
+                            fontSize: 18,
+                            fontFamily: 'Lato',
+                        }
+                    }],
+                }
+            }
+        });
+    </script>
